@@ -1,20 +1,16 @@
 import React from "react";
 import "./App.css";
+import AddReminder from "./AddReminder";
+import RemindersList from "./RemindersList";
 
 function App() {
   return (
     <div className="App">
       <div className="title">
-        <h1>Reminder Pro</h1>
+        <p>Reminder Pro</p>
       </div>
-      <div className="form-inline">
-        <div className="form-group">
-          <input className="form-control" placeholder="I have to ..." />
-        </div>
-        <button type="button" className="btn btn-success addReminder">
-          Add Reminder
-        </button>
-      </div>
+      <AddReminder />
+      <RemindersList />
     </div>
   );
 }
