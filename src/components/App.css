@@ -15,8 +15,10 @@
   justify-content: center;
 }
 
-.addReminder {
-  margin-left: 10px;
+.add-reminder-text,
+.add-reminder-date,
+.add-reminder-btn {
+  margin-right: 10px;
 }
 
 .reminders-list {

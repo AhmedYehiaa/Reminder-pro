@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import moment from "moment";
 import * as actions from "../actions";
 
 class RemindersList extends Component {
@@ -11,6 +12,9 @@ class RemindersList extends Component {
         {this.props.reminders.map(reminder => (
           <li className="list-group-item list-items" key={reminder.id}>
             <div className="list-item">{reminder.text}</div>
+            <div className="list-item">
+              {moment(new Date(reminder.dueDate)).fromNow()}
+            </div>
             <div
               className="list-item delete-button"
               onClick={() => this.props.deleteReminder(reminder.id)}

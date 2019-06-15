@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import AddReminder from "./AddReminder";
+import AddReminder from "./ReminderBox";
 import RemindersList from "./RemindersList";
 
 function App() {
